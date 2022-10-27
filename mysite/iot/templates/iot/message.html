@@ -1,0 +1,10 @@
+{% load static %}
+{% if latest_message_list %}
+    <ul>
+    {% for message in latest_message_list %}
+        {{message.message_text}}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

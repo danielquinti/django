@@ -25,13 +25,14 @@ SECRET_KEY = 'django-insecure-swf=z8z_$u2gom8u-x7u=x@$8vne22hm@6axi6o+h6r)r5a4xn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'iot.apps.IotConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
